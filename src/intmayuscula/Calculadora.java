@@ -29,23 +29,36 @@ public class Calculadora extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jLPrimerNro = new javax.swing.JLabel();
         jlSegundoNro = new javax.swing.JLabel();
         jtprimerNum = new javax.swing.JTextField();
         jtSegundonum = new javax.swing.JTextField();
-        jPanel1 = new javax.swing.JPanel();
-        jbLimpiar = new javax.swing.JButton();
-        jlResultado = new javax.swing.JLabel();
         jbSumar = new javax.swing.JButton();
         jbRestar = new javax.swing.JButton();
         jbMultiplicar = new javax.swing.JButton();
         jDividir = new javax.swing.JButton();
+        jbLimpiar = new javax.swing.JButton();
+        jlResultado = new javax.swing.JLabel();
+
+        jPanel1.setBackground(new java.awt.Color(0, 204, 153));
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 290, Short.MAX_VALUE)
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 155, Short.MAX_VALUE)
+        );
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jLabel1.setFont(new java.awt.Font("Book Antiqua", 0, 24)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(51, 0, 153));
+        jLabel1.setFont(new java.awt.Font("Arial Black", 0, 24)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(51, 0, 51));
         jLabel1.setText("CALCULADORA");
 
         jLPrimerNro.setFont(new java.awt.Font("Book Antiqua", 3, 14)); // NOI18N
@@ -56,6 +69,47 @@ public class Calculadora extends javax.swing.JFrame {
         jlSegundoNro.setForeground(new java.awt.Color(0, 0, 102));
         jlSegundoNro.setText("SEGUNDO NRO");
 
+        jbSumar.setBackground(new java.awt.Color(153, 153, 255));
+        jbSumar.setFont(new java.awt.Font("Book Antiqua", 2, 14)); // NOI18N
+        jbSumar.setForeground(new java.awt.Color(0, 0, 51));
+        jbSumar.setText("Sumar");
+        jbSumar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jbSumarActionPerformed(evt);
+            }
+        });
+
+        jbRestar.setBackground(new java.awt.Color(255, 255, 102));
+        jbRestar.setFont(new java.awt.Font("Book Antiqua", 2, 14)); // NOI18N
+        jbRestar.setForeground(new java.awt.Color(0, 0, 51));
+        jbRestar.setText("Restar");
+        jbRestar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jbRestarActionPerformed(evt);
+            }
+        });
+
+        jbMultiplicar.setBackground(new java.awt.Color(153, 0, 153));
+        jbMultiplicar.setFont(new java.awt.Font("Book Antiqua", 2, 14)); // NOI18N
+        jbMultiplicar.setForeground(new java.awt.Color(0, 0, 51));
+        jbMultiplicar.setText("Multiplicar");
+        jbMultiplicar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jbMultiplicarActionPerformed(evt);
+            }
+        });
+
+        jDividir.setBackground(new java.awt.Color(0, 255, 255));
+        jDividir.setFont(new java.awt.Font("Book Antiqua", 2, 14)); // NOI18N
+        jDividir.setForeground(new java.awt.Color(0, 0, 51));
+        jDividir.setText("Dividir");
+        jDividir.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jDividirActionPerformed(evt);
+            }
+        });
+
+        jbLimpiar.setBackground(new java.awt.Color(102, 255, 102));
         jbLimpiar.setFont(new java.awt.Font("Book Antiqua", 3, 14)); // NOI18N
         jbLimpiar.setForeground(new java.awt.Color(0, 0, 102));
         jbLimpiar.setText("Limpiar");
@@ -69,127 +123,72 @@ public class Calculadora extends javax.swing.JFrame {
         jlResultado.setForeground(new java.awt.Color(0, 51, 102));
         jlResultado.setText("RESULTADO");
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(91, 91, 91)
-                        .addComponent(jbLimpiar))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(76, 76, 76)
-                        .addComponent(jlResultado)))
-                .addContainerGap(102, Short.MAX_VALUE))
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(19, 19, 19)
-                .addComponent(jlResultado)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 50, Short.MAX_VALUE)
-                .addComponent(jbLimpiar)
-                .addGap(19, 19, 19))
-        );
-
-        jbSumar.setFont(new java.awt.Font("Book Antiqua", 2, 14)); // NOI18N
-        jbSumar.setForeground(new java.awt.Color(0, 0, 51));
-        jbSumar.setText("Sumar");
-        jbSumar.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jbSumarActionPerformed(evt);
-            }
-        });
-
-        jbRestar.setFont(new java.awt.Font("Book Antiqua", 2, 14)); // NOI18N
-        jbRestar.setForeground(new java.awt.Color(0, 0, 51));
-        jbRestar.setText("Restar");
-        jbRestar.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jbRestarActionPerformed(evt);
-            }
-        });
-
-        jbMultiplicar.setFont(new java.awt.Font("Book Antiqua", 2, 14)); // NOI18N
-        jbMultiplicar.setForeground(new java.awt.Color(0, 0, 51));
-        jbMultiplicar.setText("Multiplicar");
-        jbMultiplicar.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jbMultiplicarActionPerformed(evt);
-            }
-        });
-
-        jDividir.setFont(new java.awt.Font("Book Antiqua", 2, 14)); // NOI18N
-        jDividir.setForeground(new java.awt.Color(0, 0, 51));
-        jDividir.setText("Dividir");
-        jDividir.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jDividirActionPerformed(evt);
-            }
-        });
-
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(58, 58, 58)
-                        .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(37, 37, 37)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jlSegundoNro)
+                            .addComponent(jLPrimerNro)))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(104, 104, 104)
-                        .addComponent(jLabel1))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addGap(89, 89, 89)
+                        .addComponent(jLabel1)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(27, 27, 27)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jlResultado)
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jbSumar)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 42, Short.MAX_VALUE)
+                        .addComponent(jbRestar)
+                        .addGap(29, 29, 29)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
-                                .addGap(20, 20, 20)
-                                .addComponent(jLPrimerNro))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(21, 21, 21)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jlSegundoNro)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(jbSumar)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(jbRestar)))))
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jtSegundonum, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jtprimerNum, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(18, 18, 18)
                                 .addComponent(jbMultiplicar)
                                 .addGap(18, 18, 18)
-                                .addComponent(jDividir)
-                                .addGap(0, 0, Short.MAX_VALUE)))))
-                .addContainerGap(19, Short.MAX_VALUE))
+                                .addComponent(jDividir))
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                .addComponent(jtprimerNum, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 118, Short.MAX_VALUE)
+                                .addComponent(jtSegundonum, javax.swing.GroupLayout.Alignment.LEADING))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(94, 94, 94)
+                                .addComponent(jbLimpiar)))
+                        .addGap(21, 21, 21))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(26, 26, 26)
-                .addComponent(jLabel1)
-                .addGap(52, 52, 52)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLPrimerNro, javax.swing.GroupLayout.PREFERRED_SIZE, 17, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jtprimerNum, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jlSegundoNro)
-                    .addComponent(jtSegundonum, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jbSumar)
-                    .addComponent(jbRestar)
-                    .addComponent(jbMultiplicar)
-                    .addComponent(jDividir))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jbLimpiar))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(18, 18, 18)
+                        .addComponent(jLabel1)
+                        .addGap(60, 60, 60)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLPrimerNro, javax.swing.GroupLayout.PREFERRED_SIZE, 17, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jtprimerNum, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jlSegundoNro)
+                            .addComponent(jtSegundonum, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jbSumar)
+                            .addComponent(jbRestar)
+                            .addComponent(jDividir, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jbMultiplicar))
+                        .addGap(77, 77, 77)
+                        .addComponent(jlResultado)))
+                .addGap(66, 66, 66))
         );
 
         pack();
@@ -207,9 +206,9 @@ public class Calculadora extends javax.swing.JFrame {
             int nro1=Integer.parseInt(jtprimerNum.getText());
             int nro2=Integer.parseInt(jtSegundonum.getText());
             int resultado=nro1+nro2;
-            jlResultado.setText(resultado+"");
+            jlResultado.setText("es: " + resultado);
        }catch(NumberFormatException nf){
-           JOptionPane.showMessageDialog(this,"usted debe ingresar un Nro");
+           JOptionPane.showMessageDialog(this,"Usted debe ingresar un Nro");
            jtprimerNum.setText("");
            jtSegundonum.setText("");
     }       
@@ -220,9 +219,9 @@ try{
             int nro1=Integer.parseInt(jtprimerNum.getText());
             int nro2=Integer.parseInt(jtSegundonum.getText());
             int resultado=nro1-nro2;
-            jlResultado.setText(resultado+"");
+            jlResultado.setText("es: " + resultado);
        }catch(NumberFormatException nf){
-           JOptionPane.showMessageDialog(this,"usted debe ingresar un Nro");
+           JOptionPane.showMessageDialog(this,"Usted debe ingresar un Nro");
            jtprimerNum.setText("");
            jtSegundonum.setText("");
     }               // TODO add your handling code here:
@@ -233,9 +232,9 @@ try{
             int nro1=Integer.parseInt(jtprimerNum.getText());
             int nro2=Integer.parseInt(jtSegundonum.getText());
             int resultado=nro1*nro2;
-            jlResultado.setText(resultado+"");
+            jlResultado.setText("es: " + resultado);
        }catch(NumberFormatException nf){
-           JOptionPane.showMessageDialog(this,"usted debe ingresar un Nro");
+           JOptionPane.showMessageDialog(this,"Usted debe ingresar un Nro");
            jtprimerNum.setText("");
            jtSegundonum.setText("");
     }               // TODO add your handling code here:
@@ -246,9 +245,9 @@ try{
             int nro1=Integer.parseInt(jtprimerNum.getText());
             int nro2=Integer.parseInt(jtSegundonum.getText());
             int resultado=nro1/nro2;
-            jlResultado.setText(resultado+"");
+            jlResultado.setText("es: " + resultado);
        }catch(NumberFormatException nf){
-           JOptionPane.showMessageDialog(this,"usted debe ingresar un Nro");
+           JOptionPane.showMessageDialog(this,"Usted debe ingresar un Nro");
            jtprimerNum.setText("");
            jtSegundonum.setText("");
     }               // TODO add your handling code here:
